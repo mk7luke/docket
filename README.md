@@ -3,6 +3,7 @@
 Write the decision, the road you did not take, and the date you will open it again.
 
 Live: https://docket.holyx.cc
+Source: https://github.com/mk7luke/docket
 
 The owner link edits. The share link reads. There is no account.
 
