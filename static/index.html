@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Docket</title>
+  <meta name="description" content="Write the decision, the road you did not take, and the date you will open it again." />
+  <meta name="theme-color" content="#f3efe6" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/svg+xml" href="/static/brand/logo.svg" />
+  <link rel="canonical" href="https://docket.holyx.cc/" />
+  <meta property="og:title" content="Docket" />
+  <meta property="og:description" content="Write the decision before the reason fades. Open it again on the date you pick." />
+  <meta property="og:url" content="https://docket.holyx.cc/" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="nav">
+      <a class="nav-brand" href="/" aria-label="Docket home">
+        <img src="/static/brand/logo.svg" width="28" height="28" alt="" />
+        <span>Docket</span>
+      </a>
+      <details class="nav-menu">
+        <summary class="btn ghost sm nav-menu-btn" aria-label="Menu">Menu</summary>
+        <div class="nav-menu-panel">
+          <a href="#how">How</a>
+          <a href="#limits">Limits</a>
+        </div>
+      </details>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <p class="eyebrow">For later you</p>
+        <h1>Write it down before the reason fades.</h1>
+        <p class="lede">The call you made. The one you left. A date to open the page again.</p>
+      </section>
+      <form class="paper" method="post" action="/dockets">
+        <label class="field">
+          <span>Docket name</span>
+          <input id="name" name="name" type="text" maxlength="60" enterkeyhint="go" autocomplete="off" placeholder="This year" value="<!--NAME-->" />
+        </label>
+        <button class="btn primary lg" type="submit">Open a docket</button>
+        <p class="hint">The next page is your key. Save that link. There is no account.</p>
+        <p class="status<!--STATUS_CLASS-->" role="status"><!--STATUS--></p>
+      </form>
+      <section id="how" class="paper">
+        <h2>How</h2>
+        <div class="steps">
+          <div class="step"><span class="badge">1</span><p>Name the docket. Save the owner link. Lose it and this copy cannot open that docket again.</p></div>
+          <div class="step"><span class="badge">2</span><p>Write what you picked, what you left, and why. Pick the day you want it opened.</p></div>
+          <div class="step"><span class="badge">3</span><p>On that day the board says open this. Write what happened. Kept, changed, or still unsure.</p></div>
+          <div class="step"><span class="badge">4</span><p>The share link can read the record. It cannot change it.</p></div>
+        </div>
+      </section>
+      <section id="limits" class="paper">
+        <h2>Limits</h2>
+        <ul class="plain">
+          <li>A revisit is a day, not a clock time. The day follows the phone, not the server clock.</li>
+          <li>80 decisions a docket. 12 new dockets an hour from one network.</li>
+          <li>An opened decision stays. You do not rewrite the outcome.</li>
+          <li>The owner link is the key. There is no account.</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="foot"><p>holy-hermes</p></footer>
+  </div>
+  <script src="/static/home.js"></script>
+</body>
+</html>
